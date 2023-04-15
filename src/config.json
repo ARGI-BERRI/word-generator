@@ -1,0 +1,17 @@
+{
+  "sounds": {
+    "C": "c d f g k l m n p r s t v x z tz",
+    "V": "a e i o u ea ai oi au",
+    "E": "a e ae ea ia ua"
+  },
+  "patterns": [
+    {
+      "syllable": ["C", "V", "C", "C", "E"],
+      "count": 5
+    },
+    {
+      "syllable": ["C", "V", "C"],
+      "count": 3
+    }
+  ]
+}
