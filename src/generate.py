@@ -1,6 +1,7 @@
 import json
 import random
 
+
 def main():
     with open('./src/config.json') as config:
         data = json.load(config)
@@ -20,13 +21,14 @@ def main():
         print(f'Pattern: x{pattern["count"]} {pattern["syllable"]}')
 
         for _ in range(pattern['count']):
-            words = ''.join([ 
+            words = ''.join([
                 random.choice(sounds[sound]) for sound in pattern['syllable']
             ])
 
             print((words), end=', ')
-        
+
         print('\n')
+
 
 if __name__ == '__main__':
     main()
